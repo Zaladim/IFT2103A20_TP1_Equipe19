@@ -21,6 +21,7 @@ public class Shoot : MonoBehaviour
             Rigidbody projectileRigidBody = projectile.GetComponent<Rigidbody>();
             projectileRigidBody.AddForce(Vector3.forward * speed);
             projectileRigidBody.AddForce(Vector3.up * speed/2);
+            Destroy(projectile, 5);
 
         }
     }
