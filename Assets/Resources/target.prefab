@@ -90,7 +90,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 3811542382565809722}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.5000001
   m_Height: 2
   m_Direction: 1
@@ -107,5 +107,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 157a3c41167c98842ae6d57d048a07e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
-  time: 1
+  projectile: {fileID: 5562396304981469909, guid: 2ee8a5bf96d10d343991cfe460cc8c9e,
+    type: 3}

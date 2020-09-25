@@ -8,10 +8,7 @@ public class Move : MonoBehaviour
     private float speed = 0f;
     private float time = 1f;
     private bool left = true;
-    private void OnCollisionEnter(Collision collision)
-    {
-        speed += 0.01f;
-    }
+    private GameObject projectile;
     void Update()
     {
         if (left)
@@ -40,5 +37,13 @@ public class Move : MonoBehaviour
                 left = true;
             }
         }
+
+        projectile = GameObject.FindGameObjectWithTag("projectile");
+        if (projectile.transform.position.z >= transform.position.z)
+        {
+            speed += 0.01f;
+            Destroy(projectile);
+        }
+        
     }
 }

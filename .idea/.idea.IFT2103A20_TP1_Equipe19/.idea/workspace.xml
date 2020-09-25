@@ -29,7 +29,6 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Resources/Delete.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Resources/Shoot.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Resources/Move.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -38,9 +37,9 @@
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/Shoot.cs" />
         <option value="$PROJECT_DIR$/Assets/Resources/Follow.cs" />
-        <option value="$PROJECT_DIR$/Assets/Resources/Move.cs" />
         <option value="$PROJECT_DIR$/Assets/Resources/Shoot.cs" />
         <option value="$PROJECT_DIR$/Assets/Resources/Delete.cs" />
+        <option value="$PROJECT_DIR$/Assets/Resources/Move.cs" />
       </list>
     </option>
   </component>
@@ -93,6 +92,7 @@
       <updated>1600764120537</updated>
       <workItem from="1600764166083" duration="4781000" />
       <workItem from="1601025904694" duration="608000" />
+      <workItem from="1601033659556" duration="936000" />
     </task>
     <servers />
   </component>
