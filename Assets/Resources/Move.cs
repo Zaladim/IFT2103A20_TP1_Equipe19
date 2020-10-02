@@ -8,7 +8,9 @@ public class Move : MonoBehaviour
     private float speed = 0f;
     private float time = 1f;
     private bool left = true;
-    private GameObject projectile;
+    private float radius = 0.25f;
+    private GameObject[] projectiles;
+    
     void Update()
     {
         if (left)
@@ -38,12 +40,37 @@ public class Move : MonoBehaviour
             }
         }
 
-        projectile = GameObject.FindGameObjectWithTag("projectile");
-        if (projectile.transform.position.z >= transform.position.z)
+        projectiles = GameObject.FindGameObjectsWithTag("projectile");
+
+        foreach (GameObject projectile in projectiles)
         {
-            speed += 0.01f;
-            Destroy(projectile);
+            if (Collide(projectile))
+            {
+                print("Kiwi" + projectile.transform.position.x);
+                print("Kiwi3" + transform.position.x);
+                speed += 0.01f;
+                Destroy(projectile);
+            }
         }
-        
+
     }
+
+    bool Collide(GameObject projectile)
+    {
+        if (projectile.transform.position.y + radius >= transform.position.y)
+        {
+            if (projectile.transform.position.z + radius >= transform.position.z - 0.25  &&
+                projectile.transform.position.z - radius <= transform.position.z + 0.25)
+            {
+                if (projectile.transform.position.x + radius >= transform.position.x - 0.25 &&
+                    projectile.transform.position.x - radius <= transform.position.x + 0.25)
+                {
+                    return true;
+                }
+            }
+        }
+
+        return false;
+    }
+    
 }
