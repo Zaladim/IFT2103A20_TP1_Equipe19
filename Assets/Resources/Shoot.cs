@@ -6,7 +6,7 @@ public class Shoot : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject bullet;
-    public float speed = 100f;
+    public float speed = 0.01f;
     void Start()
     {
         
@@ -18,9 +18,6 @@ public class Shoot : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             GameObject projectile = Instantiate(bullet, transform.position, Quaternion.identity) as GameObject;
-            Rigidbody projectileRigidBody = projectile.GetComponent<Rigidbody>();
-            projectileRigidBody.AddForce(Vector3.forward * speed);
-            projectileRigidBody.AddForce(Vector3.up * speed/2);
             Destroy(projectile, 5);
 
         }

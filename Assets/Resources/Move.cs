@@ -46,8 +46,6 @@ public class Move : MonoBehaviour
         {
             if (Collide(projectile))
             {
-                print("Kiwi" + projectile.transform.position.x);
-                print("Kiwi3" + transform.position.x);
                 speed += 0.01f;
                 Destroy(projectile);
             }
