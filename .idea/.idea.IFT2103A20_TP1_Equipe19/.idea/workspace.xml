@@ -40,8 +40,8 @@
         <option value="$PROJECT_DIR$/Assets/Resources/Follow.cs" />
         <option value="$PROJECT_DIR$/Assets/Resources/Delete.cs" />
         <option value="$PROJECT_DIR$/Assets/Resources/Move.cs" />
-        <option value="$PROJECT_DIR$/Assets/Resources/Shoot.cs" />
         <option value="$PROJECT_DIR$/Assets/Resources/Projectile_Move.cs" />
+        <option value="$PROJECT_DIR$/Assets/Resources/Shoot.cs" />
       </list>
     </option>
   </component>
@@ -97,6 +97,7 @@
       <workItem from="1601033659556" duration="1397000" />
       <workItem from="1601631959372" duration="3202000" />
       <workItem from="1602578232551" duration="8428000" />
+      <workItem from="1602746550178" duration="898000" />
     </task>
     <servers />
   </component>
